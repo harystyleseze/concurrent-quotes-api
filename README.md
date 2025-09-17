@@ -6,18 +6,17 @@ A Node.js API serving random quotes with simulated asynchronous delays and a cle
 
 ## 🚀 Features
 
-- In-memory storage of quotes (acts as a mock database)  
-- Simulated random delay (0–2000ms) to mimic I/O operations (e.g., database queries)  
-- Clean MVC architecture (Model, Controller, Routes)  
-- Simple health check endpoint  
-- Lightweight and easy to extend  
+- In-memory storage of quotes (acts as a mock database)
+- Simulated random delay (0–2000ms) to mimic I/O operations (e.g., database queries)
+- Clean MVC architecture (Model, Controller, Routes)
+- Simple health check endpoint
+- Lightweight and easy to extend
 
 ---
 
 ## 📁 Project Structure
 
-```
-
+```text
 concurrent-quotes-api/
 │
 ├── src/
@@ -32,14 +31,13 @@ concurrent-quotes-api/
 ├── server.js
 ├── package.json
 └── README.md
-
-````
+```
 
 ---
 
 ## 🛠️ Prerequisites
 
-- Node.js (v12 or newer recommended)  
+- Node.js (v12 or newer recommended)
 - npm (comes with Node.js)
 
 ---
@@ -51,7 +49,7 @@ concurrent-quotes-api/
    ```bash
    git clone https://github.com/harystyleseze/concurrent-quotes-api.git
    cd concurrent-quotes-api
-````
+   ```
 
 2. Install dependencies:
 
@@ -94,8 +92,8 @@ The API serves random quotes stored in memory and simulates asynchronous delays 
 
 ## 🧪 Testing & Concurrent Requests
 
-* **Manual Testing:** Use a browser or tools like Postman / Insomnia.
-* **Load Testing:** On macOS/Linux (if you have Apache Benchmark installed), run:
+- **Manual Testing:** Use a browser or tools like Postman / Insomnia.
+- **Load Testing:** On macOS/Linux (if you have Apache Benchmark installed), run:
 
   ```bash
   ab -n 100 -c 20 http://localhost:3000/quote
@@ -107,13 +105,13 @@ The API serves random quotes stored in memory and simulates asynchronous delays 
 
 ## 🔮 Future Improvements
 
-* Use a real database (e.g., MongoDB, PostgreSQL) instead of in-memory storage
-* Add endpoints for listing all quotes, filtering, or categorizing quotes
-* Add request validation and error handling
-* Add logging (e.g., using `morgan`)
-* Add unit and integration tests (e.g., with Jest / Mocha / Supertest)
-* Environment configuration using `.env` for ports and settings
-* Containerization (Docker) and deployment
+- Use a real database (e.g., MongoDB, PostgreSQL) instead of in-memory storage
+- Add endpoints for listing all quotes, filtering, or categorizing quotes
+- Add request validation and error handling
+- Add logging (e.g., using `morgan`)
+- Add unit and integration tests (e.g., with Jest / Mocha / Supertest)
+- Environment configuration using `.env` for ports and settings
+- Containerization (Docker) and deployment
 
 ---
 
